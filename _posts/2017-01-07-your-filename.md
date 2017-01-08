@@ -1,7 +1,4 @@
 ---
-published: true
----
----
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-01-08 10:18:00
