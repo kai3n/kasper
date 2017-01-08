@@ -37,7 +37,7 @@ html {
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; font-family: "Nanum Gothic", sans-serif; }
+body { margin: 0; }
 a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
@@ -1049,6 +1049,7 @@ body:not(.post-template) .post-title {
     opacity: 1;
     top: -33px;
 }
+body { font-family: "Nanum Gothic", sans-serif; }
 
 /* ==========================================================================
    6. Author profile
