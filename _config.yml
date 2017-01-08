@@ -3,7 +3,7 @@ description: Coding, Startup, IT
 meta_description: "Software development"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl:
