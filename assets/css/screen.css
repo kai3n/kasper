@@ -187,11 +187,11 @@ body {
 }
 
 ::-moz-selection {
-    background: #D6EDFF;
+    background: gray;
 }
 
 ::selection {
-    background: #D6EDFF;
+    background: gray;
 }
 
 h1, h2, h3,
