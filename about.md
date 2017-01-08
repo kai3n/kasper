@@ -8,6 +8,6 @@ published: true
 
 ### **연락처**
 
-- [이메일](mingunpa@usc.edu)
+- [이메일](mailto:mingunpa@usc.edu)
 - [페이스북](http://fb.com/hkaien)
 - [링크드인](http://www.linkedin.com/in/mingunpak)
