@@ -14,14 +14,147 @@
       <meta property="og:description" content="James & Julie's Wedding Invitation">
       <meta property="fb:app_id" content="555274031340396">
       <title>James & Julie's Wedding Invitation</title>
+      <link href="./mobile_invitation_files/common.css" rel="stylesheet">
       <link href="./mobile_invitation_files/layout_skin.css" rel="stylesheet">
       <link rel="stylesheet" href="./mobile_invitation_files/photoswipe.css">
-      <link href="./mobile_invitation_files/common.css" rel="stylesheet">
-      <script src="./mobile_invitation_files/jquery_1.9.1.min.js"></script>
+      <style type="text/css">
+         @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+         @import url(http://fonts.googleapis.com/css?family=Quicksand:300);
+         .w_skin_photo3 {font-family:'Nanum Myeongjo', "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "NanumGothicWEB", "돋움", Dotum, "굴림", Gulim, sans-serif; letter-spacing:0px; font-size:0.8em;}
+         .w_skin_photo3 #start {margin-bottom:20%;}
+         .w_skin_photo3 h2 {padding:0px !important;}
+         .w_skin_photo3 #start .visual {position:relative; padding-top:20%;}
+         .w_skin_photo3 #start .visual .main_pohoto {margin: 10%;}
+         .w_skin_photo3 #start .visual .name2 { position: relative; margin:15% 0% 0% 0%; font-size: 15px;}
+         .w_skin_photo3 #start .visual .name2 span {display: inline-block; padding:0px 5px;}
+         .w_skin_photo3 #start .visual .name2 .star{vertical-align:sub}
+         .w_skin_photo3 #start .time {color:#050505;  padding:15px 0px 5px 0px; letter-spacing:1px;}
+         .w_skin_photo3 #start .address {color:#050505;  letter-spacing:0.3px; }
+         #greeting {overflow:hidden;}
+         #greeting .greeting {padding:0px 25px 20px 25px; color:#000000; font-size:13px; line-height:140%;}
+         #greeting dl  {width:100%; box-sizing:border-box; float:left; text-align:center; padding:0px; position:relative;}
+         #greeting dl dt {padding:10px; font-size:1.0em; font-weight:bold; color:#000; width:50%; float:left; text-align:right;}
+         #greeting dl dt img {vertical-align:middle;}
+         #greeting dl dd {display:inline-block; vertical-align:middle; float:left;}
+         #greeting .parent_contect {clear:both;position:relative;background:#f7f7f7;}
+         .w_skin_photo3 #greeting .greeting {color:#525252; padding:10% 0%; line-height:250%;  letter-spacing:0px;}
+         .w_skin_photo3 #greeting h2 {margin-top:10%;}
+         .w_skin_photo3 #greeting .name {letter-spacing:0px;}
+         .w_skin_photo3 #greeting .name p {padding-top:4%;  }
+         .w_skin_photo3 #greeting .name .dot { display:inline-block; padding:0px 5px;}
+         .w_skin_photo3 #greeting .call_img {padding:10% 0%;}
+         .w_skin_photo3 #greeting .callW { position:relative;height:100px;  }
+         .w_skin_photo3 #greeting .callW p {padding:1% 0%;}
+         .w_skin_photo3 #greeting .callW p span{padding-right:20px}
+         #greeting dl.wife {padding-bottom:10%;}
+         .w_skin_photo3 .parent_contect { margin-top:5%; overflow:hidden;}
+         .parent_contect .btn_toggle  {position:absolute;right:25%;top: 6px;overflow:hidden;}
+         .parent_contect .btn_toggle a {display:block; width:18px; height:18px; background-size:18px auto; -webkit-background-size:18px auto; -moz-background-size:18px auto; overflow:hidden;}
+         .parent_contect .btn_toggle.off a {background-position:center 0px !important;}
+         .w_skin_photo3 .parent_contect .parent_call {background:#575757; height:50px; color:#fff;  line-height:50px;}
+         .w_skin_photo3 .parent_contect ul li span.parent { display:block; padding:25px 0px 10px 0px;}
+         .w_skin_photo3 .parent_contect .btn_toggle a { width:40px; height:40px; background: url(/resources/skin/w_skin_photo3/btn_toggle.png) no-repeat center top; background-size: 40px auto; -webkit-background-size:40px auto; -moz-background-size:40px auto; overflow:hidden;}
+         .w_skin_photo3 .parent_contect .husband_c {padding-right:5px;}
+         .w_skin_photo3 .parent_contect .parent_c { padding-right:5px;}
+         .parent_contect {clear:both; overflow:hidden;}
+         .parent_contect > ul.toggle {background:#f7f7f7;}
+         .parent_contect > ul > li {float:left; width:50%; text-align:center; background:#f7f7f7;}
+         .parent_contect > ul > li > strong { display:block; font-weight:bold; font-size:15px; height:26px; line-height:26px; padding:7px 0px;}
+         .parent_contect > ul > li > strong > span {display:block; font-size:15px; height:26px;}
+         .parent_contect > ul > li > ul {margin:20px 10px 30px 0px; color:#000;}
+         .parent_contect > ul > li > ul.btn_contact_off>li { margin-bottom:10px; padding-left:10px; }
+         .parent_contect .dot_line {background:url(/resources/skin/typo/bg_dotline.png) repeat-y left top; background-size:2px auto; -webkit-background-size:2px auto; -moz-background-size:2px auto;}
+         .parent_contect li.wife strong {color:#ef5685;}
+         .parent_contect .btn_contact {text-align:center; padding:10px 0px;}
+         .parent_contect .btn_contact li { display:inline-block;}
+         .parent_contect .blue { color:#469dcf;}
+         .parent_contect .pink { color:#ef5685;}
+         .parent_contect .btn_toggle {position:absolute; right:25%; top:5px; overflow:hidden;}
+         .parent_contect .btn_toggle a {display:block; width:18px; height:18px; background-size:18px auto; -webkit-background-size:18px auto; -moz-background-size:18px auto; overflow:hidden;}
+         .parent_contect .btn_toggle.off a {background-position:center 0px !important;}
+         #toss_a {padding:30px 0px;} 
+         .w_skin_photo3 #gallery {padding:30px 0px;}
+         .w_skin_photo3 #gallery .skin_gallery { margin:2% 0%;}
+         .w_skin_photo3 #movie {padding-bottom:20px;}
+         .w_skin_photo3 #movie h2 {margin-bottom:30px;}
+         .w_skin_photo3 .btn {color:#fff; height:26px; line-height:26px; min-width:103px; text-align:center; background:url(/resources/skin/w_skin_photo3/bg_btn.png) no-repeat center top; background-size:auto 25px; -webkit-background-size:auto 25px; -moz-background-size:auto 25px;}
+         .w_skin_photo3 .btn a {color:#3a3a3a; display:block;}
+         .w_skin_photo3 .btn a.full {background:url(/resources/skin/w_skin_photo3/icon_full2.png) no-repeat 90% center; background-size:12px auto; -webkit-background-size:12px auto; -moz-background-size:12px auto;}
+         .w_skin_photo3 #movie .btn a { text-align:left; text-indent:14px;}
+         #location .map_wrap {margin:0px;line-height:10%;box-sizing:border-box; border:none; padding-top:30px; position:relative;}
+         #location .map_wrap img {width:100% !important; height:auto !important; box-sizing:border-box;}
+         #location .map_wrap iframe {width:100% !important; height:200px !important; box-sizing:border-box;}
+         #location .address {padding-left:20px; min-height:60px; padding-right:75px; text-align:left; position:relative;}
+         #location .address dt {font-size:13px; font-weight:bold; color:#000; padding-bottom:5px; font-weight:400;}
+         #location .address dd {font-size:13px; line-height:150%;}
+         #location .address dd.icon_tel { position:absolute; right:15px; top:50%; margin-top:-26px;}
+         #location .navi li .txt {display:block; color:#fff; padding-top:0px;}
+         #location .traffic_info {text-align:center; padding:10px 0px;}
+         #location .traffic_info li {display:inline-block; padding:0px 8px;}
+         #location .traffic_info li .txt {display:block; padding-top:5px;}
+         #location table td, #location table th {border:none; padding:2px 0px;}
+         #location table td strong {color:#000; display:inline-block; min-width:100px;}
+         .w_skin_photo3 #location { padding-top:30px;}
+         .w_skin_photo3 #location .navi{color:#656565; display:block; margin:auto 0; width:100%; font-family:"나눔고딕"; background:#000; opacity:0.5;}
+         .w_skin_photo3 #location .navi li {margin:auto 0;padding:0%;}
+         .w_skin_photo3 #location .address { padding-top:10%; }
+         .w_skin_photo3 #location .address dt {letter-spacing:0.3px; font-family:"나눔고딕";}
+         .w_skin_photo3 #location .address dd {font-family:"나눔고딕";}
+         .w_skin_photo3 #location .address dd.icon_tel {position:absolute; right:15px; bottom:0%;margin-top:-26px; top:auto}
+         .w_skin_photo3 #location .hall_info { padding-left:10px;} 
+         .w_skin_photo3 #location .hall_info > li > strong {background:none; letter-spacing:0.3px; display:inline-block; min-width:50px;font-family:"나눔고딕"; vertical-align:top;}
+         .w_skin_photo3 #location .hall_info > li > span {display:block;font-family:"나눔고딕"; letter-spacing:0.3px;}
+         .w_skin_photo3 #location .hall_info > li > span.hall_info_t {width:25%;}
+         .w_skin_photo3 #location .traffic_info  li .txt2 { padding-left:10px;}
+         .w_skin_photo3 #guest_book {padding:30px 0px 30px 0px; width:100%; overflow:hidden;}
+         .w_skin_photo3 #guest_book>p.txt { padding-top:10px; color:#929292; font-family:"나눔고딕"; letter-spacing:0.3px; font-weight:600; }
+         .w_skin_photo3 #guest_book .massage_box { width:90%; margin:auto; text-align:center; display:inline-block; padding:0px; position:relative; margin-top:5%;}
+         .w_skin_photo3 #guest_book .massage_box .btn_write { width:100%; text-align:center;}
+         .w_skin_photo3 #guest_book .massage_box .btn_write a { width:100%; display:inline-block;border-radius:0px; margin:auto 0; padding:0px; color:#fff; height:30px; line-height:30px; text-align:center; background:#575757; font-family:"나눔고딕"; font-weight:500;}
+         .btn_write {margin:10px 0px 0px 0px;}
+         .btn_write a {color:#fff; font-weight:bold;display:block; box-sizing:border-box; background:#231815; padding:10px; min-height:20px; line-height:20px;}
+         .w_skin_photo3 #guest_book .massage_box li span.tt { color:#705f57; font-family:"나눔고딕"; letter-spacing:0.3px;font-weight:600; top:auto;}
+         .w_skin_photo3 #guest_book .massage_box li {border-bottom:1px solid #e4dee0; color:#705f57; border-top:none; padding-top:5px; padding-bottom:5px;}
+         .w_skin_photo3 #guest_book .massage_box .massage_tit {position:absolute; bottom:10%; margin-left:auto; margin-right:auto; left: 0; right: 0;}
+         .w_skin_photo3 #guest_book .massage_list {width:85%; margin:auto 0; display:inline-block; margin:15px 15px 0px 15px; background:#f7f7f7}
+         .w_skin_photo3 #guest_book .massage_list .list_W { padding:15px;}
+         .w_skin_photo3 #guest_book .massage_list .name {font-family:"나눔고딕"; padding-left:0px; font-weight:400;}
+         .w_skin_photo3 #guest_book .massage_list .txt .txt_del a { width:20px; height:20px;background:url(/resources/skin/w_skin_photo3/btn_x.png) no-repeat left top; background-size:20px auto; -webkit-background-size:20px auto; -moz-background-size:20px auto;}
+         .w_skin_photo3 #guest_book .massage_list .time {font-family:"나눔고딕"; letter-spacing:0.3px;background:url(/resources/skin/w_skin_photo3/icon_time.png) no-repeat left 3px; background-size:10px auto; -webkit-background-size:10px auto; -moz-background-size:10px auto; color:#7b7b7b; top:15px;}
+         .w_skin_photo3 #guest_book .massage_list .txt {font-family:"나눔고딕"; letter-spacing:0.3px;}
+         #guest_book .massage_list {padding:10px; font-size:12px; background:#fff; border-radius:0px; text-align:left; position:relative; margin-top:10px;}
+         #guest_book .massage_list .name {color:#000; padding-bottom:10px}
+         #guest_book .massage_list .txt {color:#000; min-height:20px; position:relative; padding-bottom:0px;}
+         #guest_book .massage_list .txt .txt_del { position:absolute; right:0px; top:0px;}
+         #guest_book .massage_list .txt .txt_del a { display:block; width:10px; height:10px; text-indent:-999%; font-size:0px;}
+         #guest_book .massage_list .time {position:absolute; right:10px; top:10px; color:#b68947; padding-left:13px;}
+         #guest_book .password_input {display:none;}
+         #guest_book .password {margin:10px 0px 0px 0px; border:1px solid #999; padding:3px; border-radius:6px;}
+         #guest_book .password input {padding:0px; padding:5px; border:none; width:100%; box-sizing:border-box; background:none !important;}
+         .w_skin_photo3 .massage_btn li { background:#575757; display:inline-block; font-family:"나눔고딕";}
+         .w_skin_photo3 .massage_btn li a { display:block; color:#fff; min-width:100px; height:30px; line-height:30px;}
+         .massage_btn {overflow:hidden;padding-top:20px;float:  right;/* width:  90%; */padding-right:5%;}
+         .mobile_wrap .footer {background: #ececec; margin:5% 0 0 0;}
+         .footer .sns_a {font-size:0px; background-color: #cccccc;}
+         .footer .sns_a li { display:inline-block; width:25%;}
+         .footer .sns_a li a {display:block; padding:0px 3px;}
+         .footer .ci {padding:10px 0; text-align: center;}
+      </style>
+      <style type="text/css">
+         .overCount {
+         display: none;
+         }
+         .input_guidebook {
+         text-align: left;
+         }
+      </style>
+      <script async="" src="./mobile_invitation_files/analytics.js"></script><script src="./mobile_invitation_files/jquery_1.9.1.min.js"></script>
       <!--확인:jquery 버젼 정의-->
       <script src="./mobile_invitation_files/common"></script>
       <script type="text/javascript" src="./mobile_invitation_files/photoswipe.js"></script>
       <script type="text/javascript" src="./mobile_invitation_files/photoswipe-ui-default.min.js"></script>
+      <script src="./mobile_invitation_files/kakao.min.js"></script>
+      <script src="./mobile_invitation_files/sns.js"></script>
       <script>
          function skinDay() {
              var rr = $(".want_day").html();
@@ -77,10 +210,6 @@
             <div id="greeting" class="pages input_greeting_focus">
                <h2><img src="./mobile_invitation_files/title_img_1.png"></h2>
                <div class="greeting input_greeting">스무 살의 어느 날 우연처럼 시작된 인연이<br>우정이란 이름으로 이어져 어느덧 사랑이 되었습니다.<br><br> 세상의 반대편 다른 시공간 속에서도<br> 언제나 변함없이 그 자리를 지켜 온 사랑을<br> 이제는 축복 속에서 운명으로 맞이하려 합니다.<br><br>함께하셔서 저희의 시작을 축복해주십시오.</div>
-               <!--div class="name">
-                  <p>신랑 <span class="input_husband"></span></p>
-                  <p>신부 <span class="input_wife"></span></p>
-                  </!--div-->
                <p class="call_img"><img src="./mobile_invitation_files/img1.jpg"></p>
                <dl class="husband">
                   <dt>신랑에게 축하인사</dt>
