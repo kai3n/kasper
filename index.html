@@ -18,9 +18,17 @@
       <link rel="stylesheet" href="./mobile_invitation_files/photoswipe.css">
       <link href="./mobile_invitation_files/common.css" rel="stylesheet">
       <script src="./mobile_invitation_files/jquery_1.9.1.min.js"></script>
+      <!--확인:jquery 버젼 정의-->
       <script src="./mobile_invitation_files/common"></script>
       <script type="text/javascript" src="./mobile_invitation_files/photoswipe.js"></script>
       <script type="text/javascript" src="./mobile_invitation_files/photoswipe-ui-default.min.js"></script>
+      <script>
+         function skinDay() {
+             var rr = $(".want_day").html();
+             day_txt = rr.replace(/-/gi, '/');
+             $(".want_day").html(day_txt);
+         }
+      </script>
    </head>
    <body class="skin_wrap">
       <input id="invID" name="invID" type="hidden" value="296347">
@@ -52,8 +60,9 @@
       <input id="grmName" name="grmName" type="hidden" value="박민건"><input id="grmMobile" name="grmMobile" type="hidden" value="010-2976-2943"><input id="brdName" name="brdName" type="hidden" value="신예진"><input id="brdMobile" name="brdMobile" type="hidden" value="010-9293-2943"><input id="hostYN" name="hostYN" type="hidden" value="Y"><input id="grmHostRel1" name="grmHostRel1" type="hidden" value="아버지"><input id="grmHostName1" name="grmHostName1" type="hidden" value="박종석"><input id="grmHostMobile1" name="grmHostMobile1" type="hidden" value="010-4551-0835"><input id="grmHostRel2" name="grmHostRel2" type="hidden" value="어머니"><input id="grmHostName2" name="grmHostName2" type="hidden" value="김영희"><input id="grmHostMobile2" name="grmHostMobile2" type="hidden" value="010-3587-1330"><input id="brdHostRel1" name="brdHostRel1" type="hidden" value="아버지"><input id="brdHostName1" name="brdHostName1" type="hidden" value="신재욱"><input id="brdHostMobile1" name="brdHostMobile1" type="hidden" value="010-5140-5685"><input id="brdHostRel2" name="brdHostRel2" type="hidden" value="어머니"><input id="brdHostName2" name="brdHostName2" type="hidden" value="최영옥"><input id="brdHostMobile2" name="brdHostMobile2" type="hidden" value="010-5549-2125">            
       <div class="wrap w_skin_photo3">
          <h1 class="hidden">청첩장</h1>
+         <!-- 스킨 -->
          <div class="mobile_wrap">
-            <!-- cover -->
+            <!-- 표지 -->
             <div id="start" class="pages want_day_focus input_time_focus input_minute_focus input_husband_focus input_wife_focus input_hall_focus input_floor_focus">
                <div class="visual">
                   <p><img src="./mobile_invitation_files/main_text.jpg" alt="3월 14일 2시 민건♥예진 결혼합니다"></p>
@@ -63,11 +72,15 @@
                <p class="time"><span class="want_day">2020.  03.  14 Sat</span> <span class="input_time">2</span>:<span class="input_minute">00</span> <span class="input_time_ch">PM</span></p>
                <p class="address "><span class="input_hall">엘타워</span> <span class="input_floor">5층 매리골드홀</span></p>
             </div>
-            <!-- / cover --> 
-            <!-- invitation -->
+            <!-- / 표지 --> 
+            <!-- 초대합니다 -->
             <div id="greeting" class="pages input_greeting_focus">
                <h2><img src="./mobile_invitation_files/title_img_1.png"></h2>
                <div class="greeting input_greeting">스무 살의 어느 날 우연처럼 시작된 인연이<br>우정이란 이름으로 이어져 어느덧 사랑이 되었습니다.<br><br> 세상의 반대편 다른 시공간 속에서도<br> 언제나 변함없이 그 자리를 지켜 온 사랑을<br> 이제는 축복 속에서 운명으로 맞이하려 합니다.<br><br>함께하셔서 저희의 시작을 축복해주십시오.</div>
+               <!--div class="name">
+                  <p>신랑 <span class="input_husband"></span></p>
+                  <p>신부 <span class="input_wife"></span></p>
+                  </!--div-->
                <p class="call_img"><img src="./mobile_invitation_files/img1.jpg"></p>
                <dl class="husband">
                   <dt>신랑에게 축하인사</dt>
@@ -79,7 +92,7 @@
                   <dd style="padding-right:5px;"><a href="tel:010-9293-2943"><img src="./mobile_invitation_files/call.png" width="15"></a><img src="./mobile_invitation_files/call_line.png" width="15"></dd>
                   <dd><a href="sms:010-9293-2943"><img src="./mobile_invitation_files/sms.png" width="15"></a></dd>
                </dl>
-               <!-- parents -->
+               <!-- 혼주 -->
                <div class="parent_contect input_blue_p_focus input_blue_m_focus input_pink_p_focus input_pink_m_focus input_blue_p_n_focus input_blue_m_n_focus input_pink_p_n_focus input_pink_m_n_focus select_input1_focus select_input2_focus select_input3_focus select_input4_focus">
                   <p class="parent_call">혼주분께 연락하기</p>
                   <ul class="toggle">
@@ -127,12 +140,14 @@
                      </li>
                   </ul>
                </div>
-               <!-- / parents -->
+               <!-- / 혼주 -->
+               <p class="img_line"></p>
             </div>
-            <!-- / invitation --> 
-            <!-- gallery -->
+            <!-- / 초대합니다 --> 
+            <!-- 갤러리 -->
             <div id="gallery" class="pages">
                <h2><img src="./mobile_invitation_files/title_img_2.png"></h2>
+               <!-- 갤러리 타입 1 -->
                <div id="gallery_type1" class="skin_gallery_type">
                   <!-- a href="팝업이미지" background="섬네일 이미지" data-size=이미지 원본 사이즈 -->
                   <div class="skin_gallery" data-pswp-uid="1">
@@ -149,7 +164,7 @@
                      <figure><a href="./mobile_invitation_files/45b77447-c6c5-412e-9a2a-3749c0a14b84.jpg" style="background:url(./mobile_invitation_files/45b77447-c6c5-412e-9a2a-3749c0a14b84.jpg) no-repeat center center" itemprop="contentUrl" data-size="700x642.6" class="setimgsize"><img src="./mobile_invitation_files/img_frame.png" class="img_frame" itemprop="thumbnail" alt=""></a></figure>
                      <figure><a href="./mobile_invitation_files/686c70cd-fb3c-44ac-b160-90b5e472bb21.jpeg" style="background:url(./mobile_invitation_files/686c70cd-fb3c-44ac-b160-90b5e472bb21.jpeg) no-repeat center center" itemprop="contentUrl" data-size="672x448" class="setimgsize"><img src="./mobile_invitation_files/img_frame.png" class="img_frame" itemprop="thumbnail" alt=""></a></figure>
                   </div>
-                  <!-- gallery extension -->
+                  <!-- 갤러리 확대 -->
                   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                      <!-- Background of PhotoSwipe.
                         It's a separate element as animating opacity is faster than rgba(). -->
@@ -192,16 +207,17 @@
                         </div>
                      </div>
                   </div>
-                  <!-- / gallery extension -->
+                  <!-- / 갤러리 확대 -->
                </div>
+               <!-- / 갤러리 타입 1 -->
             </div>
-            <!-- / gallery -->
-            <!-- location -->
+            <!-- / 갤러리 -->
+            <!-- 오시는길 -->
             <div id="location" class="pages input_etel_focus input_address_focus">
                <h2><img src="./mobile_invitation_files/title_img_4.png"></h2>
-               <a href="http://kko.to/Sxp7K2vjH"><img src="./mobile_invitation_files/weddinghall_map.png"></a>
+               <img src="./mobile_invitation_files/weddinghall_map.png"></h2>
                <dl class="address">
-                  <a href="http://kko.to/Sxp7K2vjH">
+                  <a href="http://mcard.barunnfamily.com/SS2897427?82b3#">
                      <dt><span class="input_hall">엘타워</span> <span class="input_floor">5층 매리골드홀</span></dt>
                      <dd class="input_address">서울 서초구 강남대로 213 (양재동 24)</dd>
                      <dd class="input_etel">02-526-8600</dd>
@@ -221,12 +237,19 @@
                   <li id="hall_info12_txt" style="display:none;"><strong id="hall_info12"></strong> <span class="hall_info12"></span></li>
                </ul>
             </div>
-            <!-- / location -->
-            <script type="text/javascript" src="./mobile_invitation_files/photoswipe-gallery.js"></script>
+            <!-- / 오시는길 -->
+            <link href="./mobile_invitation_files/swiper.min.css" rel="stylesheet">
+            <script src="./mobile_invitation_files/swiper.min.js"></script>
             <!-- footer -->
             <div class="footer">
-               <p class="ci">감 사 합 니 다</p>
+               <p class="ci">
+                  감 사 합 니 다
+               </p>
             </div>
-      <!-- / footer -->
+            <!-- / footer -->
+         </div>
+         <!-- / 스킨 -->
+      </div>
+      <script type="text/javascript" src="./mobile_invitation_files/photoswipe-gallery.js"></script>
    </body>
 </html>
