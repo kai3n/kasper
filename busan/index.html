@@ -18,8 +18,20 @@
       <link href="../mobile_invitation_files/layout_skin.css" rel="stylesheet">
       <link rel="stylesheet" href="../mobile_invitation_files/photoswipe.css">
       <style type="text/css">
-         @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+         @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        @import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
+        @import url(//fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+        @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+        @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+        @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+        @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+        @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
          @import url(http://fonts.googleapis.com/css?family=Quicksand:300);
+         .np{font-family: 'Nanum Pen Script', cursive;}
+         .nb{font-family: 'Nanum Brush Script', cursive;}
          .w_skin_photo3 {font-family:'Nanum Myeongjo', "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "NanumGothicWEB", "돋움", Dotum, "굴림", Gulim, sans-serif; letter-spacing:0px; font-size:0.8em;}
          .w_skin_photo3 #start {margin-bottom:20%;}
          .w_skin_photo3 h2 {padding:0px !important;}
@@ -156,11 +168,21 @@
       <script src="../mobile_invitation_files/kakao.min.js"></script>
       <script src="../mobile_invitation_files/sns.js"></script>
       <script>
-         function skinDay() {
-             var rr = $(".want_day").html();
-             day_txt = rr.replace(/-/gi, '/');
-             $(".want_day").html(day_txt);
-         }
+         var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                    }
+                }
+            };
+            var name = getUrlParameter('name');
       </script>
    </head>
    <body class="skin_wrap">
@@ -209,7 +231,9 @@
             <!-- 초대합니다 -->
             <div id="greeting" class="pages input_greeting_focus">
                <h2><img src="../mobile_invitation_files/title_img_1.png"></h2>
-               <div class="greeting input_greeting">스무 살의 어느 날 우연처럼 시작된 인연이<br>우정이란 이름으로 이어져 어느덧 사랑이 되었습니다.<br><br> 세상의 반대편 다른 시공간 속에서도<br> 언제나 변함없이 그 자리를 지켜 온 사랑을<br> 이제는 축복 속에서 운명으로 맞이하려 합니다.<br><br>함께하셔서 저희의 시작을 축복해주십시오.</div>
+               <div class="greeting input_greeting">
+                <h3 id="name"></h3>
+                <br><br>스무 살의 어느 날 우연처럼 시작된 인연이<br>우정이란 이름으로 이어져 어느덧 사랑이 되었습니다.<br><br> 세상의 반대편 다른 시공간 속에서도<br> 언제나 변함없이 그 자리를 지켜 온 사랑을<br> 이제는 축복 속에서 운명으로 맞이하려 합니다.<br><br>함께하셔서 저희의 시작을 축복해주십시오.</div>
                <p class="call_img"><img src="../mobile_invitation_files/img1.jpg"></p>
                <dl class="husband">
                   <dt>신랑에게 축하인사</dt>
@@ -378,6 +402,14 @@
                </p>
             </div>
             <!-- / footer -->
+            <script>
+                if (name === "undefined"){
+                    $('#name').text("");
+                }
+                else{
+                    $('#name').text("To " + name);   
+                }
+            </script>
          </div>
          <!-- / 스킨 -->
       </div>
